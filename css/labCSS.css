@@ -1,0 +1,92 @@
+body {
+  margin-left: 0;
+  background-color: #D6DBDF;
+  opacity: 0.85;
+  font-family: arial;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+div.move {
+  text-align: center;
+  margin: 0 auto;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;;
+}
+
+.responsive {
+  padding: 2%;
+  float: left;
+  width: 30%;
+}
+
+@media only screen and (max-width: 350px) {
+  ul.topnav li.right, ul.topnav li {float: none;}
+
+  .responsive {
+    width: 25%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  ul.topnav li.right, ul.topnav li {float: none;}
+
+.responsive {
+  width: 100%;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 1200px) {}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
